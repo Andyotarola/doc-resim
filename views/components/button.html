@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <%- include ('../partials/head.html') %> 
+   <title><%= title %></title>
+</head>
+<body>
+
+   <%- include('../partials/navigation.html') %> 
+
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+            <h1>Botones</h1>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-12">
+             <p class="text-title">Use los estilos de botones personalizados de Resim y por ti para acciones en formularios, cuadros de diálogo y más con soporte para múltiples tamaños, estados y más.
+            </p>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+            <h2 class="text-title">Botones normales</h2>
+         </div>
+         <div class="col-sm-12">
+            <p>Los botones normales tienen una sombra de cuadro que aumenta cuando se hace clic. Este es el estilo predeterminado.
+            </p>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-4 col-sm-12">
+            <button class="btn bg--primary ripple btn--block">PRIMARY</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn bg--secondary ripple btn--block">SECONDARY</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn bg--third ripple btn--block">THIRD</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn bg--info ripple btn--block">INFO</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn bg--danger ripple btn--block">DANGER</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn bg--warning ripple btn--block">WARNING</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn bg--gray ripple btn--block">GRAY</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn bg--success ripple btn--block">SUCCESS</button> 
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn bg--dark ripple btn--block">DARK</button> 
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-12">
+<pre>
+<code class="html">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn bg--primary ripple btn--block"</span>&gt;</span>PRIMARY<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn bg--secondary ripple btn--block"</span>&gt;</span>SECONDARY<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn bg--third ripple btn--block"</span>&gt;</span>THIRD<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn bg--info ripple btn--block"</span>&gt;</span>INFO<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn bg--danger ripple btn--block"</span>&gt;</span>DANGER<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn bg--warning ripple btn--block"</span>&gt;</span>WARNING<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn bg--gray ripple btn--block"</span>&gt;</span>GRAY<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn bg--success ripple btn--block"</span>&gt;</span>SUCCESS<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span> 
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn bg--dark ripple btn--block"</span>&gt;</span>DARK<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span> 
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code>  
+</pre>
+         </div>
+      </div>
+   </div>
+
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+            <h2 class="text-title">Botones outline</h2>
+         </div>
+         <div class="col-sm-12">
+            <p>Los botones outline heredan sus bordes del color actual aplicado.</p>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-4 col-sm-12">
+            <button class="btn btn--outline text-primary ripple btn--block">PRIMARY</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn btn--outline text-secondary ripple btn--block">SECONDARY</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn btn--outline text-third ripple btn--block">THIRD</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn btn--outline text-info ripple btn--block">INFO</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn btn--outline text-danger ripple btn--block">DANGER</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn btn--outline text-warning ripple btn--block">WARNING</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn btn--outline text-gray ripple btn--block">GRAY</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn btn--outline text-success ripple btn--block">SUCCESS</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn btn--outline text-dark ripple btn--block">DARK</button>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-12">
+<pre>
+<code class="html">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--outline text-primary ripple btn--block"</span>&gt;</span>PRIMARY<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--outline text-secondary ripple btn--block"</span>&gt;</span>SECONDARY<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--outline text-third ripple btn--block"</span>&gt;</span>THIRD<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--outline text-info ripple btn--block"</span>&gt;</span>INFO<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--outline text-danger ripple btn--block"</span>&gt;</span>DANGER<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--outline text-warning ripple btn--block"</span>&gt;</span>WARNING<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--outline text-gray ripple btn--block"</span>&gt;</span>GRAY<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--outline text-success ripple btn--block"</span>&gt;</span>SUCCESS<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--outline text-dark ripple btn--block"</span>&gt;</span>DARK<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code>
+</pre>
+         </div>
+      </div>
+   </div>
+
+   
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+            <h2 class="text-title">Botones Flat</h2>
+         </div>
+         <div class="col-sm-12">
+            <p>Los botones flat no tienen sombra de cuadro ni fondo. Solo al pasar el mouse se muestra el contenedor del botón.
+            </p>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-4 col-sm-12">
+            <button class="btn btn--flat text-primary ripple btn--block">PRIMARY</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn btn--flat text-secondary ripple btn--block">SECONDARY</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn btn--flat text-third ripple btn--block">THIRD</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn btn--flat text-info ripple btn--block">INFO</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn btn--flat text-danger ripple btn--block">DANGER</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn btn--flat text-warning ripple btn--block">WARNING</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn btn--flat text-gray ripple btn--block">GRAY</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn btn--flat text-success ripple btn--block">SUCCESS</button>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <button class="btn btn--flat text-dark ripple btn--block">DARK</button>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="col-sm-12">
+<pre>
+<code class="html">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--flat text-primary ripple btn--block"</span>&gt;</span>PRIMARY<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--flat text-secondary ripple btn--block"</span>&gt;</span>SECONDARY<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--flat text-third ripple btn--block"</span>&gt;</span>THIRD<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--flat text-info ripple btn--block"</span>&gt;</span>INFO<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--flat text-danger ripple btn--block"</span>&gt;</span>DANGER<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--flat text-warning ripple btn--block"</span>&gt;</span>WARNING<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--flat text-gray ripple btn--block"</span>&gt;</span>GRAY<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--flat text-success ripple btn--block"</span>&gt;</span>SUCCESS<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--flat text-dark ripple btn--block"</span>&gt;</span>DARK<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+</code>
+</pre>
+         </div>
+      </div>
+
+   </div>
+   
+   <%- include('../partials/footer.html') %>
+
+</body>
+</html>

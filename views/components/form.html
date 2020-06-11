@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <%- include ('../partials/head.html') %> 
+   <title><%= title %></title>
+</head>
+<body>
+
+   <%- include('../partials/navigation.html') %> 
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+            <h1>Forms</h1>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-12">
+             <p class="text-title">
+               Ejemplos y pautas de uso para estilos de control de formularios, opciones de diseño y componentes personalizados para crear una amplia variedad de formularios.
+            </p>
+         </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+           <h2 class="text-sub">Controles de formularios</h2>
+         </div>
+         <div class="col-sm-12">
+           <p>
+            Los controles de forma textual, como <span class="hljs-tag">&lt;<span class="hljs-name">input</span>&gt;</span>, <span class="hljs-tag">&lt;<span class="hljs-name">select</span>&gt;</span>y <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span>&gt;</span>, están diseñados con la clase 
+            ".form__control". Se incluyen estilos para apariencia general, estado de enfoque, tamaño y más.
+           </p>
+         </div>
+       </div>
+
+      <div class="row">
+         <div class="col-sm-12">
+            <form class="form">
+               <div class="form__field flex--column">
+                  <label for="name" class="form__label">Nombre</label>
+                  <input type="text" class="form__control" id="name" />
+               </div>
+               
+               <div class="form__field flex--column">
+                  <label for="name" class="form__label">Pais</label>
+                  <select name="" id="name" class="form__control">
+                     <option value="value">Perú</option>
+                     <option value="value">Colombia</option>
+                  </select>
+               </div>
+               
+               <div class="form__field flex--column">
+                  <label for="descripcion" class="form__label">Descripción</label>
+                  <textarea name="emai" id="descripcion" rows="4" class="form__control"></textarea>
+               </div>
+            </form>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="col-sm-12">
+<pre>
+<code class="html">
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form"</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__field flex--column"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__label"</span>&gt;</span>Nombre<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__control"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"name"</span> /&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__field flex--column"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__label"</span>&gt;</span>Pais<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">name</span>=<span class="hljs-string">""</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__control"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"value"</span>&gt;</span>Perú<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"value"</span>&gt;</span>Colombia<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__field flex--column"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"descripcion"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__label"</span>&gt;</span>Descripción<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"emai"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"descripcion"</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">"4"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__control"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code>
+</pre>
+         </div>
+      </div>
+
+   </div>
+
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+           <h2 class="text-sub">Input radio</h2>
+         </div>
+         <div class="col-sm-12">
+           <p>
+              Estilo para el input de tipo radio.El estilo depende del color ".form__container"             
+           </p>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="col-sm-12">
+            <form>
+               <div class="form__field flex--column">
+                  <span class="text-sub">
+                     Sexo
+                  </span>
+                  <div class="flex">
+                     <div class="flex mr-5">
+                        <label class="form__label" for="hombre">Hombre</label>
+                        <div class="form__container text-primary m-1">
+                           <input type="radio" name="sexo" class="form__radio" id="hombre">
+                           <div class="form__content radio"></div>   
+                        </div>
+                     </div>
+                     <div class="flex">
+                        <label class="form__label" for="mujer">Mujer</label>
+                        <div class="form__container text-primary m-1">
+                           <input type="radio" name="sexo" class="form__radio" id="mujer">
+                           <div class="form__content radio"></div>   
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="col-sm-12">
+<pre>
+<code class="html">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__field flex--column"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-sub"</span>&gt;</span>
+               Sexo
+            <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex mr-5"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Hombre<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__container text-primary m-1"</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"sexo"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__radio"</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__content"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>   
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Mujer<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__container text-primary m-1"</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"sexo"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__radio"</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__content"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>   
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code>
+</pre>   
+         </div>
+      </div>
+
+   </div>
+
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+           <h2 class="text-sub">Input checkbox</h2>
+         </div>
+         <div class="col-sm-12">
+           <p>
+              Estilo para el input de tipo radio.El estilo depende del color ".form__container"             
+           </p>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-12">
+            <form>
+               <div class="form__field flex--column">
+                  <span class="text-sub mb-2">
+                     Habiladades
+                  </span>
+                  <div class="flex"> 
+                     <div class="flex mr-5">
+                        <label class="form__label" for="html5">HTML5</label>
+                        <div class="form__container text-primary">
+                           <input type="checkbox" name="html5" class="form__checkbox" id="html5">
+                           <div class="form__content checkbox"></div>   
+                        </div>
+                     </div>
+                     <div class="flex">
+                        <label class="form__label" for="css">CSS</label>
+                        <div class="form__container text-primary">
+                           <input type="checkbox" name="css" class="form__checkbox" id="css">
+                           <div class="form__content checkbox"></div>   
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+            <h2 class="text-sub">Input checkbox</h2>
+         </div>
+         <div class="col-sm-12">
+            <p>
+               Estilo para el input de tipo radio.El estilo depende del color ".form__container"             
+            </p>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-12">
+            <form>
+               <div class="form__field">
+                  <div class="flex">
+                     <button class="btn bg--primary ripple" type="button">
+                        <input type="file" class="form__file" data-target="#photo" data-toggle="file" multiple>
+                        Seleccionar Archivo
+                     </button>
+                     <span class="form__file--name" id="photo"></span>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+   
+   <%- include('../partials/footer.html') %>
+
+</body>
+</html>

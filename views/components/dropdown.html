@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <%- include ('../partials/head.html') %> 
+   <title><%= title %></title>
+</head>
+<body>
+
+   <%- include('../partials/navigation.html') %> 
+
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+            <h1>Dropdown</h1>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-12">
+             <p class="text-title">
+               Alterna las superposiciones contextuales para mostrar listas de enlaces y más con el complemento desplegable Resim.
+            </p>
+         </div>
+      </div>
+    </div>
+
+   <div class="container">
+
+      <div class="row">
+         <div class="col-sm-12">
+            <h2 class="text-title">Tipos de dropdowns</h2>
+         </div>
+         <div class="col-sm-12">
+            <p>
+               Dropdown Center(Ninguna clase) ,Dropdown Left(.left) y Dropdown Right(.right)
+            </p>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="col-sm-4">
+            <div class="dropdown" id="drop1">
+               <button class="btn btn--flat text-primary ripple" data-toggle="dropdown" data-target="#drop1">DROPDOWN LEFT<span class="arrow-bottom"></span></button>
+               <div class="dropdown__menu left">
+                  <a href="#item1" class="dropdown__link ripple">Item 1</a>
+                  <a href="#item2" class="dropdown__link ripple">Item 2</a>
+                  <a href="#item3" class="dropdown__link ripple">Item 3</a>            
+                  <a href="#item4" class="dropdown__link ripple">Something.....</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-4">
+            <div class="dropdown" id="drop2">
+               <button class="btn btn--flat text-primary ripple" data-toggle="dropdown" data-target="#drop2">DROPDOWN CENTER<span class="arrow-bottom"></span></button>
+               <div class="dropdown__menu">
+                  <a href="#item1" class="dropdown__link ripple">Item 1</a>
+                  <a href="#item2" class="dropdown__link ripple">Item 2</a>
+                  <a href="#item3" class="dropdown__link ripple">Item 3</a>            
+                  <a href="#item4" class="dropdown__link ripple">Something.....</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-4">
+            <div class="dropdown" id="drop3">
+               <button class="btn btn--flat text-primary ripple ripple" data-toggle="dropdown" data-target="#drop3">DROPDOWN RIGHT<span class="arrow-bottom"></span></button>
+               <div class="dropdown__menu right">
+                  <a href="#item1" class="dropdown__link ripple">Item 1</a>
+                  <a href="#item2" class="dropdown__link ripple">Item 2</a>
+                  <a href="#item3" class="dropdown__link ripple">Item 3</a>            
+                  <a href="#item4" class="dropdown__link ripple">Something.....</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="row">
+         <pre>
+<code class="html">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-4"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"drop1"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--flat text-primary ripple"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#drop1"</span>&gt;</span>DROPDOWN LEFT<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"arrow-bottom"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__menu left"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#item1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link ripple"</span>&gt;</span>Item 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#item2"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link ripple"</span>&gt;</span>Item 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#item3"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link ripple"</span>&gt;</span>Item 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>            
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#item4"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link ripple"</span>&gt;</span>Something.....<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-4"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"drop2"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--flat text-primary ripple"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#drop2"</span>&gt;</span>DROPDOWN CENTER<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"arrow-bottom"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__menu"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#item1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link ripple"</span>&gt;</span>Item 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#item2"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link ripple"</span>&gt;</span>Item 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#item3"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link ripple"</span>&gt;</span>Item 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>            
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#item4"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link ripple"</span>&gt;</span>Something.....<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-4"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"drop3"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--flat text-primary ripple ripple"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#drop3"</span>&gt;</span>DROPDOWN RIGHT<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"arrow-bottom"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__menu right"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#item1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link ripple"</span>&gt;</span>Item 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#item2"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link ripple"</span>&gt;</span>Item 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#item3"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link ripple"</span>&gt;</span>Item 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>            
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#item4"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link ripple"</span>&gt;</span>Something.....<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code>
+         </pre>
+      </div>
+
+   </div>
+   
+   <%- include('../partials/footer.html') %>
+
+</body>
+</html>

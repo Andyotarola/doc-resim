@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <%- include ('../partials/head.html') %> 
+   <title><%= title %></title>
+</head>
+<body>
+
+   <%- include('../partials/navigation.html') %> 
+
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+            <h1>Card</h1>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-12">
+             <p class="text-title">
+                Las tarjetas de Resim proporcionan un contenedor de contenido flexible y extensible con múltiples variantes y opciones.
+            </p>
+         </div>
+      </div>
+   </div>
+
+   <div class="card">
+      <div class="card__item" id="card1">
+         <div class="card__content">
+            <div class="card__picture ripple" data-target="#card1" data-toggle="card">
+               <div class="skeleton"></div>
+               <img src="https://cdn.vuetifyjs.com/images/cards/house.jpg" alt="" class="card__img">
+            </div>
+
+            <div class="card__footer">
+               <div class="card__title text-center">
+                  <h3>Big House</h3>
+               </div>
+
+               <div class="flex jc--end mr-2">
+                  <button class="btn btn--flat text-primary ripple" data-target="#card1" data-toggle="card">Ver más
+                  </button>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="card__reveal" tabindex="-1">
+            <div class="flex jc--between m-3">
+               <div class="card__title p-none">
+                  <h3>Big House</h3>
+               </div>
+               <button class="btn--close btn--icon ripple" data-dismiss="card"></button>
+            </div>
+            <div class="flex jc--between m-3">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis repudiandae blanditiis,
+                  corporis recusandae molestias voluptatem neque fugit officiis similique consectetur non nam aperiam
+                  nisi esse nostrum delectus nulla voluptates.</p>
+            </div>
+         </div>
+
+      </div>
+      <div class="card__item" id="card2">
+
+         <div class="card__content">
+            <div class="card__picture ripple" data-target="#card2" data-toggle="card">
+               <img src="https://cdn.vuetifyjs.com/images/cards/road.jpg" alt="" class="card__img">
+            </div>
+
+            <div class="card__footer">
+               <div class="card__title text-center">
+                  <h3>The long way</h3>
+               </div>
+
+               <div class="flex jc--end">
+                  <button class="btn btn--flat text-primary ripple mr-2" data-target="#card2" data-toggle="card">Ver más</button>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="card__reveal" tabindex="-1">
+            <div class="flex jc--between m-3">
+               <div class="card__title p-none">
+                  <h3>The long way</h3>
+               </div>
+               <button class="btn--close btn--icon ripple" data-dismiss="card"></button>
+            </div>
+            <div class="flex jc--between m-3">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis repudiandae blanditiis,
+                  corporis recusandae molestias voluptatem neque fugit officiis similique consectetur non nam aperiam
+                  nisi esse nostrum delectus nulla voluptates.
+               </p>
+            </div>
+         </div>
+
+      </div>
+      <div class="card__item" id="card3">
+
+         <div class="card__content">
+            <div class="card__picture ripple" data-target="#card3" data-toggle="card">
+               <img src="https://cdn.vuetifyjs.com/images/cards/plane.jpg" alt="" class="card__img">
+            </div>
+
+            <div class="card__footer">
+               <div class="card__title text-center">
+                  <h3>The Airplane</h3>
+               </div>
+
+               <div class="flex jc--end">
+                  <button class="btn btn--flat text-primary ripple mr-2" data-target="#card3" data-toggle="card">
+                     Ver más
+                  </button>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="card__reveal" tabindex="-1">
+            <div class="flex jc--between m-3">
+               <div class="card__title p-none">
+                  <h3>The Airplane</h3>
+               </div>
+               <button class="btn--close btn--icon ripple" data-dismiss="card"></button>
+            </div>
+            <div class="flex jc--between m-3">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis repudiandae blanditiis,
+                  corporis recusandae molestias voluptatem neque fugit officiis similique consectetur non nam aperiam
+                  nisi esse nostrum delectus nulla voluptates.</p>
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+            <pre>
+<code  class="html">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card"</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__item"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"card1"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__content"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__picture ripple"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#card1"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"card"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"skeleton"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.vuetifyjs.com/images/cards/house.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__img"</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__footer"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title text-center"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Big House<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--end mr-2"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--flat text-primary ripple"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#card1"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"card"</span>&gt;</span>Ver más
+               <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__reveal"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--between m-3"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title p-none"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Big House<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn--close btn--icon ripple"</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">"card"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--between m-3"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis repudiandae blanditiis,
+               corporis recusandae molestias voluptatem neque fugit officiis similique consectetur non nam aperiam
+               nisi esse nostrum delectus nulla voluptates.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__item"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"card2"</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__content"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__picture ripple"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#card2"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"card"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.vuetifyjs.com/images/cards/road.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__img"</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__footer"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title text-center"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>The long way<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--end"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--flat text-primary ripple mr-2"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#card2"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"card"</span>&gt;</span>Ver más<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__reveal"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--between m-3"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title p-none"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>The long way<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn--close btn--icon ripple"</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">"card"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--between m-3"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis repudiandae blanditiis,
+               corporis recusandae molestias voluptatem neque fugit officiis similique consectetur non nam aperiam
+               nisi esse nostrum delectus nulla voluptates.
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__item"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"card3"</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__content"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__picture ripple"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#card3"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"card"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.vuetifyjs.com/images/cards/plane.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__img"</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__footer"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title text-center"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>The Airplane<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--end"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--flat text-primary ripple mr-2"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#card3"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"card"</span>&gt;</span>
+                  Ver más
+               <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__reveal"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--between m-3"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title p-none"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>The Airplane<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn--close btn--icon ripple"</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">"card"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--between m-3"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis repudiandae blanditiis,
+               corporis recusandae molestias voluptatem neque fugit officiis similique consectetur non nam aperiam
+               nisi esse nostrum delectus nulla voluptates.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code>
+            </pre>
+         </div>
+      </div>
+   </div>
+
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+            <h4>Fondo personalizado</h4>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-12">
+            <p>
+               El color del fondo de las tarjetas tambien pueden ser personalizadas,dependiendo de los colores
+               que tengas en la varible "$colors" de SASS 
+            </p>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-12">
+<pre>
+<code class="SCSS">
+$colors:(
+   primary: #1867c0,
+   secondary:#51cf8e,
+   third: #f56431d9,
+   success: #28a745,
+   dark : #343a40,
+   danger: #dc3545,
+   warning: #ffc107,
+   info : #17a2b8,
+   gray: #545b62,
+);
+</code>
+</pre>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-12">
+            <p>
+               Por ejemplo con el color:<span class="text-primary">PRIMARY</span>,<span class="text-dark">DARK</span> y <span class="text-danger">DANGER</span>.Se usa la clase <span class="text-bold">bg--$clave</span>,que sirve para el color de fondo,donde <span class="text-bold">$clave</span> es la clave del color que vas usar para el fondo.Lo puedes usar para el <span class="text-bold">"card__footer"</span> y para el 
+               <span class="text-bold">"card__reveal"</span>
+            </p>
+         </div>
+      </div>
+   </div>
+
+   <div class="card">
+      <div class="card__item" id="card4">
+         <div class="card__content">
+            <div class="card__picture ripple" data-target="#card4" data-toggle="card">
+               <div class="skeleton"></div>
+               <img src="https://cdn.vuetifyjs.com/images/cards/house.jpg" alt="" class="card__img">
+            </div>
+
+            <div class="card__footer bg--primary">
+               <div class="card__title text-center">
+                  <h3>Big House</h3>
+               </div>
+
+               <div class="flex jc--end mr-2">
+                  <button class="btn btn--flat ripple" data-target="#card4" data-toggle="card">Ver más
+                  </button>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="card__reveal bg--primary" tabindex="-1">
+            <div class="flex jc--between m-3">
+               <div class="card__title p-none">
+                  <h3>Big House</h3>
+               </div>
+               <button class="btn--close btn--icon ripple" data-dismiss="card"></button>
+            </div>
+            <div class="flex jc--between m-3">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis repudiandae blanditiis,
+                  corporis recusandae molestias voluptatem neque fugit officiis similique consectetur non nam aperiam
+                  nisi esse nostrum delectus nulla voluptates.</p>
+            </div>
+         </div>
+
+      </div>
+      <div class="card__item" id="card5">
+
+         <div class="card__content">
+            <div class="card__picture ripple" data-target="#card5" data-toggle="card">
+               <img src="https://cdn.vuetifyjs.com/images/cards/road.jpg" alt="" class="card__img">
+            </div>
+
+            <div class="card__footer bg--dark">
+               <div class="card__title text-center">
+                  <h3>The long way</h3>
+               </div>
+
+               <div class="flex jc--end">
+                  <button class="btn btn--flat ripple mr-2" data-target="#card5" data-toggle="card">Ver más</button>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="card__reveal bg--dark" tabindex="-1">
+            <div class="flex jc--between m-3">
+               <div class="card__title p-none">
+                  <h3>The long way</h3>
+               </div>
+               <button class="btn--close btn--icon ripple" data-dismiss="card"></button>
+            </div>
+            <div class="flex jc--between m-3">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis repudiandae blanditiis,
+                  corporis recusandae molestias voluptatem neque fugit officiis similique consectetur non nam aperiam
+                  nisi esse nostrum delectus nulla voluptates.
+               </p>
+            </div>
+         </div>
+
+      </div>
+      <div class="card__item" id="card6">
+
+         <div class="card__content">
+            <div class="card__picture ripple" data-target="#card6" data-toggle="card">
+               <img src="https://cdn.vuetifyjs.com/images/cards/plane.jpg" alt="" class="card__img">
+            </div>
+
+            <div class="card__footer bg--danger">
+               <div class="card__title text-center">
+                  <h3>The Airplane</h3>
+               </div>
+
+               <div class="flex jc--end">
+                  <button class="btn btn--flat ripple mr-2" data-target="#card6" data-toggle="card">
+                     Ver más
+                  </button>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="card__reveal bg--danger" tabindex="-1">
+            <div class="flex jc--between m-3">
+               <div class="card__title p-none">
+                  <h3>The Airplane</h3>
+               </div>
+               <button class="btn--close btn--icon ripple" data-dismiss="card"></button>
+            </div>
+            <div class="flex jc--between m-3">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis repudiandae blanditiis,
+                  corporis recusandae molestias voluptatem neque fugit officiis similique consectetur non nam aperiam
+                  nisi esse nostrum delectus nulla voluptates.</p>
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+<pre>
+<code class="html">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card"</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__item"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"card4"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__content"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__picture ripple"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#card4"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"card"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"skeleton"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.vuetifyjs.com/images/cards/house.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__img"</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__footer bg--primary"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title text-center"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Big House<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--end mr-2"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--flat ripple"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#card4"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"card"</span>&gt;</span>Ver más
+               <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__reveal bg--primary"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--between m-3"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title p-none"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Big House<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn--close btn--icon ripple"</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">"card"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--between m-3"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis repudiandae blanditiis,
+               corporis recusandae molestias voluptatem neque fugit officiis similique consectetur non nam aperiam
+               nisi esse nostrum delectus nulla voluptates.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__item"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"card5"</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__content"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__picture ripple"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#card5"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"card"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.vuetifyjs.com/images/cards/road.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__img"</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__footer bg--dark"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title text-center"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>The long way<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--end"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--flat ripple mr-2"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#card5"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"card"</span>&gt;</span>Ver más<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__reveal bg--dark"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--between m-3"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title p-none"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>The long way<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn--close btn--icon ripple"</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">"card"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--between m-3"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis repudiandae blanditiis,
+               corporis recusandae molestias voluptatem neque fugit officiis similique consectetur non nam aperiam
+               nisi esse nostrum delectus nulla voluptates.
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__item"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"card6"</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__content"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__picture ripple"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#card6"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"card"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.vuetifyjs.com/images/cards/plane.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__img"</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__footer bg--danger"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title text-center"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>The Airplane<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--end"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--flat ripple mr-2"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#card6"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"card"</span>&gt;</span>
+                  Ver más
+               <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__reveal bg--danger"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--between m-3"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title p-none"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>The Airplane<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn--close btn--icon ripple"</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">"card"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--between m-3"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis repudiandae blanditiis,
+               corporis recusandae molestias voluptatem neque fugit officiis similique consectetur non nam aperiam
+               nisi esse nostrum delectus nulla voluptates.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code>
+</pre>
+         </div>
+      </div>
+   </div>
+
+   <%- include('../partials/footer.html') %>
+
+</body>
+</html>      

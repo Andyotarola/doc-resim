@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <%- include ('../partials/head.html') %> 
+   <title><%= title %></title>
+</head>
+<body>
+
+   <%- include('../partials/navigation.html') %> 
+
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+            <h1>Carousel</h1>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-12">
+             <p class="text-title">
+               Un componente de presentación de diapositivas para recorrer elementos (imágenes o diapositivas de texto) como un carrusel.
+            </p>
+         </div>
+      </div>
+    </div>
+  
+     <!-- Carousel completo -->
+  
+     <div class="container">
+        
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="text-title">Carousel Completo</h2>
+          </div>
+          <div class="col-sm-12">
+            <p>
+              Con navegación, controles,paginación  y intervalo(data-interval="intervalo")
+            </p>
+          </div>
+        </div>
+     
+        <div class="row">
+           <div class="col-sm-12">
+             <div class="carousel mb-5" style="height: 300px">
+               <div class="carousel__container" data-toggle="carousel" data-interval="6000">
+                 <div class="carousel__item carousel__active">
+                   <div class="carousel__content" style="background-color: #3f51b5;">
+                     <div class="flex jc--center ai--center w-100 h-100 us-none">
+                       <h1 class="text-white text-lg">SLIDER 5</h1>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="carousel__item">
+                   <div class="carousel__content" style="background-color: slateblue;">
+                     <div class="flex jc--center ai--center w-100 h-100 us-none">
+                       <h1 class="text-white text-lg">SLIDER 6</h1>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="carousel__item">
+                   <div class="carousel__content" style="background-color: #c2185b;">
+                     <div class="flex jc--center ai--center w-100 h-100 us-none">
+                       <h1 class="text-white text-lg">SLIDER 7</h1>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="carousel__item">
+                   <div class="carousel__content" style="background-color: teal;">
+                     <div class="flex jc--center ai--center w-100 h-100 us-none">
+                       <h1 class="text-white text-lg">SLIDER 8</h1>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+     
+               <div class="carousel__prev ripple" data-toggle="carousel_prev"></div>
+               <div class="carousel__next ripple" data-toggle="carousel_next"></div>
+     
+               <div class="carousel__controls" data-toggle="carousel_controls">
+                 <button class="carousel__pagination ripple"></button>
+                 <button class="carousel__pagination ripple"></button>
+                 <button class="carousel__pagination ripple"></button>
+                 <button class="carousel__pagination ripple"></button>
+               </div>
+     
+             </div>
+           </div>
+        </div>
+  
+        <div class="row">
+           <div class="col-sm-12">
+              <pre>
+  <code class="html">
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel mb-5"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"height: 300px"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__container"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"carousel"</span> <span class="hljs-attr">data-interval</span>=<span class="hljs-string">"6000"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__item carousel__active"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #3f51b5;"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--center ai--center w-100 h-100 us-none"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-white text-lg"</span>&gt;</span>SLIDER 5<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: slateblue;"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--center ai--center w-100 h-100 us-none"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-white text-lg"</span>&gt;</span>SLIDER 6<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #c2185b;"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--center ai--center w-100 h-100 us-none"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-white text-lg"</span>&gt;</span>SLIDER 7<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: teal;"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--center ai--center w-100 h-100 us-none"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-white text-lg"</span>&gt;</span>SLIDER 8<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__prev ripple"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"carousel_prev"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__next ripple"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"carousel_next"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__controls"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"carousel_controls"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__pagination ripple"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__pagination ripple"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__pagination ripple"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__pagination ripple"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  </code>
+              </pre>
+           </div>
+        </div>
+        
+     </div>
+  
+  
+     <!-- Carousel con paginacion -->
+  
+     <div class="container">
+        
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="text-title">Carousel solo con paginación</h2>
+          </div>
+          <div class="col-sm-12">
+            <p>
+              Solo con prev y next, pero puede tener un intervalo
+            </p>
+          </div>
+        </div>
+  
+        <div class="row">
+           <div class="col-sm-12">
+             <div class="carousel mb-5" style="height: 300px">
+               <div class="carousel__container" data-toggle="carousel">
+                 <div class="carousel__item carousel__active">
+                   <div class="carousel__content" style="background-color: #3f51b5;">
+                     <div class="flex jc--center ai--center w-100 h-100 us-none">
+                       <h1 class="text-white text-lg">SLIDER 5</h1>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="carousel__item">
+                   <div class="carousel__content" style="background-color: slateblue;">
+                     <div class="flex jc--center ai--center w-100 h-100 us-none">
+                       <h1 class="text-white text-lg">SLIDER 6</h1>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="carousel__item">
+                   <div class="carousel__content" style="background-color: #c2185b;">
+                     <div class="flex jc--center ai--center w-100 h-100 us-none">
+                       <h1 class="text-white text-lg">SLIDER 7</h1>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="carousel__item">
+                   <div class="carousel__content" style="background-color: teal;">
+                     <div class="flex jc--center ai--center w-100 h-100 us-none">
+                       <h1 class="text-white text-lg">SLIDER 8</h1>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="carousel__prev ripple" data-toggle="carousel_prev"></div>
+               <div class="carousel__next ripple" data-toggle="carousel_next"></div>   
+             </div>
+           </div>
+        </div>
+        
+        <div class="row">
+           <div class="col-sm-12">
+              <pre>
+  <code class="html">
+     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-12"</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel mb-5"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"height: 300px"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__container"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"carousel"</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__item carousel__active"</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #3f51b5;"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--center ai--center w-100 h-100 us-none"</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-white text-lg"</span>&gt;</span>SLIDER 5<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__item"</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: slateblue;"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--center ai--center w-100 h-100 us-none"</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-white text-lg"</span>&gt;</span>SLIDER 6<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__item"</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #c2185b;"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--center ai--center w-100 h-100 us-none"</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-white text-lg"</span>&gt;</span>SLIDER 7<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__item"</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: teal;"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--center ai--center w-100 h-100 us-none"</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-white text-lg"</span>&gt;</span>SLIDER 8<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__prev ripple"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"carousel_prev"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__next ripple"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"carousel_next"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>   
+       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  </code>               
+              </pre>
+           </div>
+        </div>
+  
+        </div>
+     </div>
+  
+     <!-- Carousel con contols -->
+  
+     <div class="container">
+        
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="text-title">Carousel solo con controls</h2>
+          </div>
+          <div class="col-sm-12">
+            <p>
+              Solo controles, pero puede tener un intervalo(data-interval="intervalo")
+            </p>
+          </div>
+        </div>
+  
+        <div class="row">
+           <div class="col-sm-12">
+             <div class="carousel mb-5" style="height: 300px">
+               <div class="carousel__container" data-toggle="carousel">
+                 <div class="carousel__item carousel__active">
+                   <div class="carousel__content" style="background-color: #3f51b5;">
+                     <div class="flex jc--center ai--center w-100 h-100 us-none">
+                       <h1 class="text-white text-lg">SLIDER 5</h1>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="carousel__item">
+                   <div class="carousel__content" style="background-color: slateblue;">
+                     <div class="flex jc--center ai--center w-100 h-100 us-none">
+                       <h1 class="text-white text-lg">SLIDER 6</h1>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="carousel__item">
+                   <div class="carousel__content" style="background-color: #c2185b;">
+                     <div class="flex jc--center ai--center w-100 h-100 us-none">
+                       <h1 class="text-white text-lg">SLIDER 7</h1>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="carousel__item">
+                   <div class="carousel__content" style="background-color: teal;">
+                     <div class="flex jc--center ai--center w-100 h-100 us-none">
+                       <h1 class="text-white text-lg">SLIDER 8</h1>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               
+               <div class="carousel__controls" data-toggle="carousel_controls">
+                 <button class="carousel__pagination ripple"></button>
+                 <button class="carousel__pagination ripple"></button>
+                 <button class="carousel__pagination ripple"></button>
+                 <button class="carousel__pagination ripple"></button>
+               </div>
+               
+             </div>
+           </div>
+        </div>
+        
+        <div class="row">
+           <div class="col-sm-12">
+              <pre>
+  <code class="html">
+     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-12"</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel mb-5"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"height: 300px"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__container"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"carousel"</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__item carousel__active"</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #3f51b5;"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--center ai--center w-100 h-100 us-none"</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-white text-lg"</span>&gt;</span>SLIDER 5<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__item"</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: slateblue;"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--center ai--center w-100 h-100 us-none"</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-white text-lg"</span>&gt;</span>SLIDER 6<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__item"</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #c2185b;"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--center ai--center w-100 h-100 us-none"</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-white text-lg"</span>&gt;</span>SLIDER 7<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__item"</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: teal;"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--center ai--center w-100 h-100 us-none"</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-white text-lg"</span>&gt;</span>SLIDER 8<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__controls"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"carousel_controls"</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__pagination ripple"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__pagination ripple"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__pagination ripple"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__pagination ripple"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         
+       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>   
+  </code>                 
+              </pre>
+           </div>
+        </div>
+  
+     </div>
+  
+     <!-- Carousel sin controls ni pagination  -->
+  
+     <div class="container">
+        
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="text-title">Carousel solo</h2>
+        </div>
+        <div class="col-sm-12">
+          <p>
+            Solo con el evento touch y un intervalo(data-interval="intervalo")
+          </p>
+        </div>
+      </div>
+  
+        <div class="row">
+           <div class="col-sm-12">
+             <div class="carousel mb-5" style="height: 300px">
+               <div class="carousel__container" data-toggle="carousel" data-interval="5000">
+                 <div class="carousel__item carousel__active">
+                   <div class="carousel__content" style="background-color: #3f51b5;">
+                     <div class="flex jc--center ai--center w-100 h-100 us-none">
+                       <h1 class="text-white text-lg">SLIDER 5</h1>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="carousel__item">
+                   <div class="carousel__content" style="background-color: slateblue;">
+                     <div class="flex jc--center ai--center w-100 h-100 us-none">
+                       <h1 class="text-white text-lg">SLIDER 6</h1>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="carousel__item">
+                   <div class="carousel__content" style="background-color: #c2185b;">
+                     <div class="flex jc--center ai--center w-100 h-100 us-none">
+                       <h1 class="text-white text-lg">SLIDER 7</h1>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="carousel__item">
+                   <div class="carousel__content" style="background-color: teal;">
+                     <div class="flex jc--center ai--center w-100 h-100 us-none">
+                       <h1 class="text-white text-lg">SLIDER 8</h1>
+                     </div>
+                   </div>
+                 </div>
+               </div> 
+             </div>
+           </div>
+        </div>
+        
+        <div class="row">
+           <div class="col-sm-12">
+              <pre>
+  <code class="html">
+     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-12"</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel mb-5"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"height: 300px"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__container"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"carousel"</span> <span class="hljs-attr">data-interval</span>=<span class="hljs-string">"5000"</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__item carousel__active"</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #3f51b5;"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--center ai--center w-100 h-100 us-none"</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-white text-lg"</span>&gt;</span>SLIDER 5<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__item"</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: slateblue;"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--center ai--center w-100 h-100 us-none"</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-white text-lg"</span>&gt;</span>SLIDER 6<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__item"</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #c2185b;"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--center ai--center w-100 h-100 us-none"</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-white text-lg"</span>&gt;</span>SLIDER 7<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__item"</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel__content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: teal;"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex jc--center ai--center w-100 h-100 us-none"</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-white text-lg"</span>&gt;</span>SLIDER 8<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span> 
+       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  </code>                 
+              </pre>
+           </div>
+        </div>
+  
+     </div>
+  
+
+   <%- include('../partials/footer.html') %>
+
+</body>
+</html>
